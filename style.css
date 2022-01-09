@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+}
+.wrapper {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  cursor: default;
+  backdrop-filter: blur(10px);
+}
+.blurr-bckgrd {
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.096);
+}
+.header {
+  font-size: 60px;
+  font-weight: 300;
+  padding: 10px;
+}
+.container {
+  margin: 30px auto;
+}
+.date,
+.time {
+  height: 30px;
+  color: #ffffff;
+  padding: 10px;
+  font-family: inherit;
+  background: none;
+  border: 1px solid #fefdff;
+  border-radius: 5px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+.count-values {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+  margin: 40px auto;
+}
+.number {
+  font-size: 50px;
+}
+.submit {
+  padding: 7px;
+  width: 100px;
+  border-radius: 8px;
+  margin: 30px auto;
+  border: none;
+  background: #0a0a0a25;
+  color: #ffffff;
+  font-family: inherit;
+}
+.date:hover {
+  transition: 0.6s ease-in;
+  background: rgba(23, 23, 24, 0.521);
+  box-shadow: 10px 10px 50px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 50px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 50px -3px rgba(0, 0, 0, 0.75);
+}
+.time:hover {
+  transition: 0.6s ease-in;
+  background: rgba(23, 23, 24, 0.521);
+  box-shadow: 10px 10px 50px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 50px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 50px -3px rgba(0, 0, 0, 0.75);
+}
+.submit:hover {
+  transform: scale(1.3);
+  transition: 0.6s ease-in;
+  background: #413f46;
+  cursor: pointer;
+  box-shadow: 10px 10px 50px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 50px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 50px -3px rgba(0, 0, 0, 0.75);
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    margin: 100px auto;
+  }
+  .wrapper,
+  .blurr-bckgrd {
+    height: 100vh;
+  }
+  .remainder {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header {
+    font-size: 40px;
+  }
+  .wrapper,
+  .blurr-bckgrd {
+    height: 100vh;
+  }
+  .number {
+    font-size: 25px;
+  }
+  .count-values {
+    width: 400px;
+  }
+}

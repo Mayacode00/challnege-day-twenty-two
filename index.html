@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="blurr-bckgrd">
+        <h1 class="header">Simple Countdown App</h1>
+        <p class="note">
+          All you need to do is input the date and time you want to countdown
+          from<br />
+          Make sure your date and time is not in the past
+        </p>
+        <div class="container">
+          <input type="date" class="date" /><br />
+          <input type="time" value="00:00:00" class="time"/>
+          <br />
+          <input type="submit" value="Countdown" class="submit"></input>
+          <div class="count-values">
+            <div class="counts">
+              <p class="number days"></p>
+              <p class="days">Days</p>
+            </div>
+            <div class="counts">
+              <p class="number hours"></p>
+              <p class="hour">Hour</p>
+            </div>
+            <div class="counts">
+              <p class="number min"></p>
+              <p class="minutes">Minutes</p>
+            </div>
+            <div class="counts">
+              <p class="number seconds"></p>
+              <p class="seconds">Seconds</p>
+            </div>
+          </div>
+        </div>
+        <p class="remainder"></p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
